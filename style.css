@@ -1,3 +1,24 @@
-img {
-    width: 30%;
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#side-bar {
+    width: 40vw;
+    height: 100vh;
+    text-align: center;
+    background-image: url(img/sidebar_img.jpg);
+    background-size: contain;
+}
+
+#sidebar-credit {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 95%;
+    color: white;
+}
+
+#sidebar-credit a {
+    color: aquamarine;
 }
