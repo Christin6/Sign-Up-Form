@@ -6,7 +6,7 @@ TOC:
 - RESPONSIVE (TBC)
 */
 
-/* RESET */
+/* RESET (from Josh Comeau) */
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -94,14 +94,16 @@ body {
 	height: 100vh;
 	text-align: center;
 	background-image: url(img/sidebar_img.jpg);
-	background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #sidebar-credit {
 	padding: 0;
 	margin: 0;
 	position: relative;
-	top: 95%;
+	top: 92%;
 	color: white;
 }
 
