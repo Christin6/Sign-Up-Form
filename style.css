@@ -1,6 +1,7 @@
 /*
 TOC:
 - RESET
+- VARIABLES
 - BASIC LAYOUT
 - VERIFICATIONS (TBC)
 - RESPONSIVE (TBC)
@@ -83,10 +84,38 @@ h6 {
 	isolation: isolate;
 }
 
-/* BASIC LAYOUT */
+/* VARIABLES */
+:root {
+    --accent-color: rgb(198, 131, 42);
+    --bg-color: rgb(230, 231, 237);
+    --fg-color: rgb(255, 255, 255);
 
+    --basic-font: "Roboto", sans-serif;
+}
+
+@font-face {
+    font-family: NorseBold;
+    src: url(./font/Norse-Bold.otf);
+}
+
+/* BASIC LAYOUT */
 body {
 	display: flex;
+}
+
+p,
+a,
+h1,
+button,
+input,
+label {
+    font-family: var(--basic-font);
+}
+
+main > #main-text > p,
+label,
+button {
+    font-weight: 800;
 }
 
 #side-bar {
@@ -99,51 +128,98 @@ body {
     background-size: cover;
 }
 
-#sidebar-credit {
+#side-bar > #odin-logo {
+    position: relative;
+    top: 30%;
+
+    height: 20%;
+    padding: 1rem;
+    background-color: rgba(198, 131, 42, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#side-bar > #odin-logo > img {
+    height: 100%;
+}
+
+#side-bar > #odin-logo > p {
+    font-size: 750%;
+    color: var(--fg-color);
+    font-family: NorseBold;
+}
+
+#side-bar > #sidebar-credit {
 	padding: 0;
 	margin: 0;
 	position: relative;
-	top: 92%;
-	color: white;
+	top: 72%;
+	color: var(--fg-color);
 }
 
 #sidebar-credit > a {
-	color: aquamarine;
+	color: var(--accent-color);
 }
 
 main {
 	width: 60vw;
-	padding: 1rem;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
-	background-color: #e6e7ed;
+	background-color: var(--bg-color);
+}
+
+main > #main-text {
+    margin-bottom: 2rem;
+}
+
+main > #main-text > p {
+    margin: 0.5rem 2rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
 }
 
 main > #sign-up {
-	background-color: white;
-	width: max-content;
+	background-color: var(--fg-color);
+	width: inherit;
+    padding: 1rem;
 }
 
-main > form {
+#sign-up > h1 {
+    padding-left: 1.2rem;
+}
+
+form {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-main > form > div {
+form > div {
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 50%;
+    padding: 0.5rem 1.2rem;
 }
 
-main > form > label {
+form > div > label {
+    font-size: small;
 	text-transform: uppercase;
 }   
+
+main > p,
+main > button {
+    margin: 0.5rem 2rem;
+}
 
 main > button {
 	width: fit-content;
 	padding: 0.5rem 2rem;
+    margin-top: 2rem;
 	border-radius: 0.5rem;
+
+    background-color: var(--accent-color);
+    color: var(--fg-color);
 }
