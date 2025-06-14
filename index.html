@@ -28,39 +28,41 @@
             <div id="sign-up">
                 <h1>Let's do this!</h1>
                 <form action="">
-                    <div>
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" required>
+                    <div id="info-input">
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+    
+                        <div>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div> 
+    
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="youremail@gmail.com" required>
+                        </div>
+    
+                        <div>
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="phone-number" id="phone-number" placeholder="0812131432" required>
+                        </div>
+    
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+    
+                        <div>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" required>
-                    </div> 
-
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-
-                    <div>
-                        <label for="phone-number">Phone Number</label>
-                        <input type="number" name="phone-number" id="phone-number" required>
-                    </div>
-
-                    <div>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-
-                    <div>
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" required>
-                    </div>
+                    <button type="submit">Create Account</button>
                 </form>
             </div>
-
-            <button type="submit">Create Account</button>
 
             <p>Already have an account? <a href="#">Log in</a></p>
         </main>

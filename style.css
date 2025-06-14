@@ -3,7 +3,6 @@ TOC:
 - RESET
 - VARIABLES
 - BASIC LAYOUT
-- VERIFICATIONS (TBC)
 - RESPONSIVE (TBC)
 */
 
@@ -192,32 +191,41 @@ main > #sign-up {
     padding-left: 1.2rem;
 }
 
-form {
+form > #info-input {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-form > div {
+form > #info-input > div {
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 50%;
     padding: 0.5rem 1.2rem;
 }
 
-form > div > label {
+form > #info-input > div > label {
     font-size: small;
 	text-transform: uppercase;
 }   
 
-main > p,
-main > button {
+input:focus,
+input:focus-visible {
+	outline: 2px solid blue;
+}
+
+input:invalid {
+	border-color: red;
+}
+
+main > p{
     margin: 0.5rem 2rem;
 }
 
-main > button {
+form > button {
 	width: fit-content;
 	padding: 0.5rem 2rem;
     margin-top: 2rem;
+	margin-left: 1rem;
 	border-radius: 0.5rem;
 
     background-color: var(--accent-color);
