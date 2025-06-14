@@ -213,10 +213,6 @@ input:focus-visible {
 	outline: 2px solid blue;
 }
 
-input:invalid {
-	border-color: red;
-}
-
 main > p{
     margin: 0.5rem 2rem;
 }
